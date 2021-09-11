@@ -4,7 +4,7 @@ let source = "business";
 let api = "a3e2ccbf6c574c9799a9f6f1d3f4f4b1";
 let newsaccordion = document.getElementById("accordionExample");
 //create a get request
-const xhr = new ActiveXObject("Msxml2.XMLHTTP");();
+const xhr = new ActiveXObject("Msxml2.XMLHTTP");
 xhr.open("GET", `https://newsapi.org/v2/top-headlines?country=us&category=${source}&apiKey=${api}`, true);
 xhr.getResponseHeader('Content-type', 'application/json');
 xhr.onload = function () {
