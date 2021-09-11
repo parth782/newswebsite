@@ -9,7 +9,7 @@ xhr.open("GET", `https://newsapi.org/v2/top-headlines?country=us&category=${sour
 xhr.getResponseHeader('Content-type', 'application/json');
 xhr.onload = function () {
     if (this.status == 200) {
-        let json = JSON.parse(this.responseText)
+        let json = JSON.parse(this.responseText);
         let articles = json.articles;
         //source,author,description,publishedat;
         console.log(articles);
